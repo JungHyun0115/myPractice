@@ -4,6 +4,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
 	http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="tv" class="polymorphism.SamsungTV"/>
+	<bean id="tv" class="polymorphism.SamsungTV"
+	init-method="initMethod"/>
 
 </beans>

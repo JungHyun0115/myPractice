@@ -18,6 +18,7 @@ public class TVUser {
 		tv.powerOff();
 		
 		//3. Spring 컨테이너를 종료한다.
+		factory.close();
 	}
 
 }
