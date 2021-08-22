@@ -5,6 +5,6 @@
 	http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean id="tv" class="polymorphism.SamsungTV"
-	destroy-method="destroyMethod"/>
+	lazy-init="true"/>
 
 </beans>
