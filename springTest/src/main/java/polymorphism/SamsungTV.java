@@ -7,6 +7,9 @@ public class SamsungTV implements TV{
 	public void destroyMethod() {
 		System.out.println("按眉 昏力 傈俊 贸府且 肺流 贸府...");
 	}
+	public SamsungTV() {
+		System.out.println("===> SamsungTV 按眉 积己");
+	}
 	public void powerOn() {
 		System.out.println("SamsungTV---傈盔 囊促.");
 	}
