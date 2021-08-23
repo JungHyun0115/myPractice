@@ -6,7 +6,7 @@
 	http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean id="tv" class="polymorphism.SamsungTV"
-			p:speaker-ref="soby" p:price="2700000">
+			p:speaker-ref="sony" p:price="2700000">
 	</bean>
 	
 	<bean id="sony" class="polymorphism.SonySpeaker"></bean>
