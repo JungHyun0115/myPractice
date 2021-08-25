@@ -20,7 +20,7 @@
 							expression="execution(* com.springbook.biz..*Impl.*(..))"/>
 							
 			<aop:aspect ref="before">
-				<aop:around pointcut-ref="allPointcut" method="beforeLog"/>
+				<aop:before pointcut-ref="allPointcut" method="beforeLog"/>
 			</aop:aspect>
 		</aop:config>
 	
