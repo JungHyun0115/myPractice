@@ -14,7 +14,7 @@
 <title>글 상세</title>
 <center>
 	<h1>글 상세</h1>
-	<a href="logout_proc.jsp" method="post"></a>
+	<a href="logout.do" method="post"></a>
 	<hr>
 	<form action="updateBoard.do" method="post">
 	<input name="seq" type="hidden" value="<%= board.getSeq()%>">
