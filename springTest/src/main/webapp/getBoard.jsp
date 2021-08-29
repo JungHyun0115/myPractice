@@ -26,6 +26,7 @@
 	<a href="logout_proc.jsp" method="post"></a>
 	<hr>
 	<form action="updateBoard_proc.jsp" method="post">
+	<input name="seq" type="hidden" value="<%= board.getSeq()%>">
 		<table border="1" cellpadding="0" cellspacing="0">
 			<tr>
 				<td bgcolor="orange" width="70">Á¦¸ñ</td>
