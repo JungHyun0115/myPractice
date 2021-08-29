@@ -28,6 +28,7 @@ public class DispatcherServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
+		request.setCharacterEncoding("EUC-KR");
 		process(request, response);
 	}
 	
@@ -36,7 +37,6 @@ public class DispatcherServlet extends HttpServlet {
 		//1. 클라이언트의 요청 path 정보를 추출한다.
 		String uri = request.getRequestURI();
 		String path = uri.substring(uri.lastIndexOf("/"));
-		System.out.println(path);
 		
 		//2. HandlerMapping을 통해 path에 해당하는 Controller를 검색한다.
 		Controller ctrl = handlerMapping.getController(path);
